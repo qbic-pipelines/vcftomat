@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [#6](https://github.com/qbic-pipelines/vcftomat/pull/7) - samplenames to columns
+- [#7](https://github.com/qbic-pipelines/vcftomat/pull/7) - samplenames to columns
+- [#8](https://github.com/qbic-pipelines/vcftomat/pull/8) - concat for sample, label pairs
 
 ### Fixed
 

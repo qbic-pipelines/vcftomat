@@ -1,2 +1,2 @@
-sample,gvcf,vcf_path,vcf_index_path
-chr22,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878.chr22.1X.vcf.gz,
+sample,label,gvcf,vcf_path,vcf_index_path
+chr22,chr22,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878.chr22.1X.vcf.gz,

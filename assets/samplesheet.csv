@@ -1,4 +1,5 @@
-sample,gvcf,vcf_path,vcf_index_path
-SAMPLE-1,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
-SAMPLE-1,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
-SAMPLE-2,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
+sample,label,gvcf,vcf_path,vcf_index_path
+SAMPLE-1,pipelineA-callerA,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
+SAMPLE-1,pipelineB-callerA,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
+SAMPLE-2,pipelineB-callerB,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
+SAMPLE-2,pipelineB-callerB,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
