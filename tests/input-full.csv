@@ -1,8 +1,9 @@
-sample,gvcf,vcf_path,vcf_index_path
-toindex_nomerge,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878.chr22.1X.vcf.gz,
-toindex_gvcf_nomerge,true,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/gvcf/test.genome.g.vcf.gz,
-indexed_merge,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878_chrM.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878_chrM.vcf.gz.tbi
-indexed_merge,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA24385_sv.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA24385_sv.vcf.gz.tbi
-toindex_gvcf_merge,true,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/gvcf/test.genome.g.vcf.gz,
-toindex_gvcf_merge,true,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/gvcf/test2.genome.vcf.gz,
-empty,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/empty.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/empty.vcf.gz.tbi
+sample,label,gvcf,vcf_path,vcf_index_path
+indexed_merge,callerA,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878_chrM.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878_chrM.vcf.gz.tbi
+indexed_merge,callerB,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA24385_sv.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA24385_sv.vcf.gz.tbi
+toindex_gvcf_merge,callerA,true,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/gvcf/test.genome.g.vcf.gz,
+toindex_gvcf_merge,callerB,true,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/gvcf/test2.genome.vcf.gz,
+empty,empty,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/empty.vcf.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/empty.vcf.gz.tbi
+toindex_concat_merge,concat,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878_GIAB.chr22.vcf.gz,
+toindex_concat_merge,concat,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA12878.chr22.1X.vcf.gz,
+toindex_concat_merge,merge,false,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/illumina/vcf/NA24385_sv.vcf.gz,

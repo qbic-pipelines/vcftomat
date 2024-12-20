@@ -10,3 +10,8 @@ null/
 .nf-test
 .nf-test*
 .nf-test/*
+
+tests/unmergedgvcfs
+tests/unmergedgvcfs/*
+tests/input-full-ncgm.csv
+conf/test_full_ncgm.config

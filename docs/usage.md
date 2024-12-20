@@ -19,15 +19,17 @@ You will need to create a samplesheet with information about the samples you wou
 The `sample` identifiers have to be the same when the vcfs originate from the same bam but were yielded with different callers. The pipeline will merge all vcfs from the same sample into one vcf file but is also able to handle if there is only one vcf file for a sample (merging will then be skipped).
 
 ```csv title="samplesheet.csv"
-sample,gvcf,vcf_path,vcf_index_path
-SAMPLE-1,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
-SAMPLE-1,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
-SAMPLE-2,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
+sample,label,gvcf,vcf_path,vcf_index_path
+SAMPLE-1,pipelineA-callerA,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
+SAMPLE-1,pipelineB-callerA,false,path/to/vcf.gz,path/to/.vcf.gz.tbi
+SAMPLE-2,pipelineB-callerB,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
+SAMPLE-2,pipelineB-callerB,true,path/to/g.vcf.gz,path/to/g.vcf.gz.tbi
 ```
 
 | Column           | Description                                                                                                                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `sample`         | Custom sample name. This entry will be identical for vcfs that originate from the same bam but were yielded with different callers. Spaces in sample names are automatically converted to underscores (`_`). |
+| `label`          | Label for the vcf file. This is used to concatenate vcfs with the same label.                                                                                                                                |
 | `gvcf`           | Boolean whether the supplied sample is a gvcf (true) or a normal vcf (false).                                                                                                                                |
 | `vcf_path`       | Full path to VCF file, should have the extension ".g.vcf.gz", ".vcf.gz", ".g.vcf" or ".vcf".                                                                                                                 |
 | `vcf_index_path` | Full path to index of (g)VCF file. Optional. Should have extension ".tbi".                                                                                                                                   |

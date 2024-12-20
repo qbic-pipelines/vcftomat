@@ -18,6 +18,7 @@ lint:
     - docs/images/nf-core-vcftomat_logo_dark.png
     - .github/ISSUE_TEMPLATE/bug_report.yml
   included_configs: false
+  actions_ci: false
   multiqc_config:
     - report_comment
   nextflow_config:

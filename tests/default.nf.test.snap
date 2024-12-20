@@ -1,8 +1,11 @@
 {
     "Params: default - stub": {
         "content": [
-            3,
+            4,
             {
+                "BCFTOOLS_REHEADER": {
+                    "bcftools": 1.2
+                },
                 "TABIX_TABIX": {
                     "tabix": 1.2
                 },
@@ -10,10 +13,15 @@
                     "vcf2counts.R": "1.0.0"
                 },
                 "Workflow": {
-                    "qbic-pipelines/vcftomat": "v1.0.0"
+                    "qbic-pipelines/vcftomat": "v1.1.0dev"
                 }
             },
             [
+                "bcftools",
+                "bcftools/reheader",
+                "bcftools/reheader/chr22.reheader.vcf.gz",
+                "bcftools/reheader/chr22.reheader.vcf.gz.tbi",
+                "bcftools/reheader/versions.yml",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_plots",
@@ -27,24 +35,26 @@
                 "vcf2mat/chr22.csv"
             ],
             [
-                "multiqc_report.html:md5,d41d8cd98f00b204e9800998ecf8427e",
-                "params_2024-12-17_14-11-30.json:md5,e889d2cdd5bc9ee3c6ba30670bcc6e9d",
-                "vcftomat_software_mqc_versions.yml:md5,943ea09b23c917a604b0c4ca7e6cd2a9",
-                "NA12878.chr22.1X.vcf.gz.csi:md5,d41d8cd98f00b204e9800998ecf8427e",
-                "NA12878.chr22.1X.vcf.gz.tbi:md5,d41d8cd98f00b204e9800998ecf8427e",
+                "versions.yml:md5,c030f20e1b02bd49b0a4ec369f5b4429",
                 "chr22.csv:md5,d41d8cd98f00b204e9800998ecf8427e"
+            ],
+            [
+                "chr22.reheader.vcf.gz:md5,68b329da9893e34099c7d8ad5cb9c940"
             ]
         ],
         "meta": {
             "nf-test": "0.9.2",
             "nextflow": "24.10.2"
         },
-        "timestamp": "2024-12-17T14:11:37.029125"
+        "timestamp": "2024-12-20T12:10:59.547851"
     },
     "Params: default": {
         "content": [
-            3,
+            4,
             {
+                "BCFTOOLS_REHEADER": {
+                    "bcftools": 1.2
+                },
                 "TABIX_TABIX": {
                     "tabix": 1.2
                 },
@@ -52,10 +62,15 @@
                     "vcf2counts.R": "1.0.0"
                 },
                 "Workflow": {
-                    "qbic-pipelines/vcftomat": "v1.0.0"
+                    "qbic-pipelines/vcftomat": "v1.1.0dev"
                 }
             },
             [
+                "bcftools",
+                "bcftools/reheader",
+                "bcftools/reheader/chr22.reheader.vcf.gz",
+                "bcftools/reheader/chr22.reheader.vcf.gz.tbi",
+                "bcftools/reheader/versions.yml",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/multiqc.log",
@@ -72,22 +87,18 @@
                 "vcf2mat/chr22.csv"
             ],
             [
-                "multiqc.log:md5,f1831b4704ace0f1bf40484b89e1c0cc",
+                "versions.yml:md5,c030f20e1b02bd49b0a4ec369f5b4429",
                 "multiqc_citations.txt:md5,4c806e63a283ec1b7e78cdae3a923d4f",
-                "multiqc_data.json:md5,9e060d91e3c502ff73a23427677e2cd0",
-                "multiqc_software_versions.txt:md5,26e022537cef236e3ea03361c21fd853",
-                "multiqc_sources.txt:md5,d2a044df39ce3c6abe5cdc2d67473490",
-                "multiqc_report.html:md5,07eb72927d74a418f50d2e573ab8dab4",
-                "params_2024-12-17_14-11-05.json:md5,80d6ed47cd3b26995e93eefb2d91877d",
-                "vcftomat_software_mqc_versions.yml:md5,943ea09b23c917a604b0c4ca7e6cd2a9",
-                "NA12878.chr22.1X.vcf.gz.tbi:md5,3ca6e94f86c548be87dd5fcc391a2525",
-                "chr22.csv:md5,765ece7265a0b6abac7df8d8632a1500"
+                "chr22.csv:md5,06c743150691cd38f4a2caf65ca6c115"
+            ],
+            [
+                "chr22.reheader.vcf.gz:md5,11558863c409ca2d6278e699cd5fde1a"
             ]
         ],
         "meta": {
             "nf-test": "0.9.2",
             "nextflow": "24.10.2"
         },
-        "timestamp": "2024-12-17T14:11:26.411256"
+        "timestamp": "2024-12-20T12:10:25.903469"
     }
 }

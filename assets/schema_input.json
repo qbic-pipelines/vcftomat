@@ -13,6 +13,12 @@
                 "errorMessage": "Sample name must be provided and cannot contain spaces",
                 "meta": ["id"]
             },
+            "label": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Label must be provided and cannot contain spaces",
+                "meta": ["label"]
+            },
             "gvcf": {
                 "type": "boolean",
                 "errorMessage": "",
@@ -40,6 +46,6 @@
                 "errorMessage": "Index of VCF file must have extension '.tbi'- Optional"
             }
         },
-        "required": ["sample", "gvcf", "vcf_path"]
+        "required": ["sample", "label", "gvcf", "vcf_path"]
     }
 }
